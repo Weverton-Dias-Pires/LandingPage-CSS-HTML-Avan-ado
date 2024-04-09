@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+body{
+    background: url(../src/images/bg-desktop.svg) center/cover no-repeat;
+    background-color: var(--primary-violet);
+    font-family: 'Open Sans', sans-serif;
+    margin: 50px;
+}
+
+.logo img{
+    width: 170px;
+    margin-bottom: 50px;
+}
+
+.conteudo{
+    display: flex;
+}
+
+.conteudo .conteudo-imagem img {
+    width: 600px;
+}
+
+.conteudo .conteudo-texto {
+    margin: 40px;
+    color: #fff;
+}
+
+.conteudo .conteudo-texto h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.conteudo .conteudo-texto p {
+    font-size: 14px;
+}
+
+.btn {
+    background-color: #fff;
+    color: var(--primary-violet);
+    font-size: 14px;
+    padding: 10px 45px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: var(--primary-magenta);
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+.rede-social {
+    display: flex;
+    justify-content: end; 
+}
+
+.rede-social li a {
+    color: #fff;
+    margin: 10px;
+    font-size: 15px;
+    border: solid 1px #fff;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.rede-social a:hover {
+    color: var(--primary-magenta);
+    border-color: var(--primary-magenta);
+    transition: 0.3s ease-in-out;
+  }
+
+  @media (max-width: 375px) {
+    .logo {
+        width: 100%;
+    }
+    
+    .logo img{
+        width: 120px;
+    } 
+    
+    .page {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+    
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudo .conteudo-imagem img {
+        width: 300px;
+    }
+
+    .conteudo .conteudo-texto {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo .conteudo-texto h1 {
+        font-size: 22px;
+    }
+}
